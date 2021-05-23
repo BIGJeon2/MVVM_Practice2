@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_tv_initial"
+            android:textSize="30dp"
+            android:padding="4dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="16dp"
+            android:layout_constraintTop_toTopOf="parent"
+            android:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            android:text="H"
+            android:gravity="center"
+            android:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/item_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_constraintTop_toTopOf="parent"
+            android:text="Hello Someone"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/item_tv_initial"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/item_tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_constraintTop_toBottomOf="@+id/item_tv_name"
+            android:layout_constraintBottom_toBottomOf="parent"
+            android:layout_constraintStart_toStartOf="@+id/item_tv_name"
+            android:text="999-888-777"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/item_tv_initial" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
