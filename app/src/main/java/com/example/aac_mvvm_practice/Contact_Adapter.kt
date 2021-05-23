@@ -42,7 +42,7 @@ class Contact_Adapter(val ContactOnClicked: (Contact) -> Unit, val ContactOnLong
 
     override fun getItemCount(): Int = contacts.size
 //갱신시 사용할 함수
-    private fun Set_Contact(contacts: List<Contact>){
+    fun Set_Contact(contacts: List<Contact>){
         this.contacts = contacts
         notifyDataSetChanged()
     }
